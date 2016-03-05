@@ -20,7 +20,7 @@ public class MyCookie extends HttpServlet {
 
         PrintWriter printWriter = response.getWriter();
         Cookie[] cookies = request.getCookies();
-        if (cookies.length == 0) {
+        if (cookies == null || cookies.length == 0) {
             printWriter.println("No cookies");
         } else {
             for (Cookie cookie : cookies) {
