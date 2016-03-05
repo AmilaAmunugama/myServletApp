@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>Counter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Redirector</servlet-name>
+        <servlet-class>Redirector</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Redirector</servlet-name>
+        <url-pattern>/redirector</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ParamCatcher</servlet-name>
+        <servlet-class>ParamCatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ParamCatcher</servlet-name>
+        <url-pattern>/paramCatcher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyCookie</servlet-name>
+        <servlet-class>MyCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyCookie</servlet-name>
+        <url-pattern>/myCookie</url-pattern>
+    </servlet-mapping>
+
+</web-app>
