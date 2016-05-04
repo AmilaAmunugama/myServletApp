@@ -11,6 +11,8 @@
     <title></title>
 </head>
 <body>
-<h2>Redirected..!</h2>
+<table>
+<%= request.getAttribute("today")%>
+</table>
 </body>
 </html>

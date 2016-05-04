@@ -50,4 +50,27 @@
         <url-pattern>/myCookie</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Downloader</servlet-name>
+        <servlet-class>Downloader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Downloader</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CommonError</servlet-name>
+        <servlet-class>CommonError</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommonError</servlet-name>
+        <url-pattern>/HandlerError</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/HandlerError</location>
+    </error-page>
+
 </web-app>

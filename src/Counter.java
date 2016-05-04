@@ -18,7 +18,7 @@ public class Counter extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Integer count = 0;
-        ServletContext servletContext = request.getSession().getServletContext();
+        ServletContext servletContext = request.getServletContext();
         Object nou = servletContext.getAttribute(countAttribute);
         if (!Objects.isNull(nou)) {
             count = (Integer) nou;
